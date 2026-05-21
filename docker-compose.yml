@@ -5,6 +5,8 @@ services:
     restart: always
     environment:
       - ENVIRONMENT=production
+    volumes:
+      - ./logs:/app/logs
 
   nginx:
     image: nginx:latest
