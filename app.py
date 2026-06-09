@@ -10,7 +10,7 @@ def home():
     with open("/app/logs/access.log", "a") as f:
         f.write(f"Accessed at {datetime.now()}\n")
     return {
-        "message": "message": "CI/CD Pipeline Working Successfully",
+        "message": "CI/CD Pipeline Working Successfully",
         "hostname": socket.gethostname(),
         "environment": os.getenv("ENVIRONMENT", "development")
     }
